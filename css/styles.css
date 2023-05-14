@@ -547,6 +547,27 @@ body {
   fill: currentColor;
 }
 
+.footer-input {
+  color: var(--cloud);
+}
+.subscribe-text {
+  color: var(--cloud);
+}
+.subscribe-form {
+  color: var(--cloud);
+}
+
+.btn-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+
+  background: var(--iris);
+  border-radius: 4px;
+}
+
 /**
   |============================
   | Modal
@@ -583,6 +604,7 @@ body {
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%);
+  padding: 24px;
 
   width: 408px;
   min-height: 576px;
@@ -637,6 +659,61 @@ body {
 .modal-close-icon:hover,
 .modal-close-icon:focus {
   fill: var(--white);
+}
+
+.modal-title {
+  display: block;
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--gray);
+}
+
+.modal-form {
+  color: var(--gray);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--light-slate);
+}
+
+.form-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.form-field {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  padding-left: 38px;
+
+  outline: transparent;
+  outline-offset: -1px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.form-field:focus {
+  border: 1px solid var(--iris);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }
 
 /**
