@@ -600,17 +600,21 @@
             </svg>
           </div>
 
-          <label for="modal_comment">Comment</label>
-          <textarea
+          <label class="form-label" for="modal_comment">Comment</label>
+          <textarea class="form-comment"
             name="modal_comment"
             id="modal_comment"
             rows="6"
             placeholder="Text input"
           ></textarea>
 
-          <label for="">
-            <input type="checkbox" name="modal-agreement">
-            <span>I accept the terms and conditions of the <a href="">Privacy Policy</a></span>
+          <label class="form-agreement">
+            <input class="form-check-input" type="checkbox" name="modal-agreement">
+            <!-- <svg class="form-custom-check" width="" height="">
+              <use class="unchecked" href=""></use>
+              <use class="checked" href=""></use>
+            </svg> -->
+            <span class="form-agreement-text" >I accept the terms and conditions of the <a href="" class="form-agreement-link">Privacy Policy</a></span>
           </label>
 
           <button class="hero-button" type="submit">Send</button>

@@ -663,7 +663,9 @@ body {
 
 .modal-title {
   display: block;
+  margin-top: 72px;
   margin-bottom: 16px;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -703,6 +705,7 @@ body {
   outline-offset: -1px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field:focus {
@@ -714,8 +717,80 @@ body {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 
+.form-field:focus + .form-icon {
+  fill: var(--iris);
+}
+
+.form-comment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  resize: none;
+  outline: transparent;
+  outline-offset: -1px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.form-comment:focus {
+  border: 1px solid var(--iris);
+}
+
+.form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.form-check-input {
+  appearance: none;
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+
+.form-check-input:checked {
+background: var(--ocean);
+border: 1px solid var(--ocean);
+border-radius: 2px;
+}
+
+.form-custom-check {
+}
+.unchecked {
+}
+.checked {
+}
+.form-agreement-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--light-slate);
+}
+
+.form-agreement-link {
+  color: var(--iris);
+}
 /**
   |============================
   | Portfolio
