@@ -745,6 +745,13 @@ body {
   color: var(--gray);
 }
 
+.modal-label-list {
+  margin-bottom: 16px;
+}
+
+.modal-item {
+  margin-bottom: 8px;
+}
 .form-label {
   display: block;
   margin-bottom: 4px;
@@ -759,7 +766,6 @@ body {
 
 .form-wrapper {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .form-field {
